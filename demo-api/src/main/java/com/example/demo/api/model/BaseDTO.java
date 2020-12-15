@@ -1,6 +1,6 @@
 package com.example.demo.api.model;
 
-import com.example.demo.api.model.enums.ValidFlagEnum;
+import com.example.demo.api.enums.ValidFlagEnum;
 import lombok.Data;
 
 import java.util.Date;

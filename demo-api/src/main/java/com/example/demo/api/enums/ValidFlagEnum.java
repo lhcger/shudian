@@ -1,4 +1,4 @@
-package com.example.demo.api.model.enums;
+package com.example.demo.api.enums;
 
 /**
  * @author superman

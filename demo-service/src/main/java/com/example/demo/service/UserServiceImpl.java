@@ -20,11 +20,13 @@ public class UserServiceImpl implements UserService {
 
     private static final BeanCopier copier = BeanCopier.create(UserModel.class, UserDO.class, false);
 
+    @Override
     public String getUserName(Long id) {
         UserDO userDO = userMapper.getById(id);
         return userDO != null ? userDO.getName() : null;
     }
 
+    @Override
     public UserModel addUser(UserModel user) {
         UserDO userDO = new UserDO();
         copier.copy(user, userDO, null);

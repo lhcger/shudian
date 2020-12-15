@@ -1,4 +1,4 @@
-package com.example.demo.api.model.book;
+package com.example.demo.api.book;
 
 import com.example.demo.api.model.BaseDTO;
 import lombok.Data;
