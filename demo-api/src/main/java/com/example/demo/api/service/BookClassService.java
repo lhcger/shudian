@@ -4,6 +4,11 @@ package com.example.demo.api.service;
 import com.example.demo.api.book.BookClassDTO;
 import com.example.demo.api.constants.ResultDTO;
 
+
+
+/**
+ * @author superman
+ */
 public interface BookClassService {
     /**
      * 根据名称模糊查询全部分类信息
@@ -18,6 +23,7 @@ public interface BookClassService {
      * @return 查找的数据集
      * */
     ResultDTO findById(int id);
+
 
     /**
      * 新增

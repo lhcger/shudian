@@ -3,8 +3,12 @@ package com.example.demo.dao.mapper.book;
 import com.example.demo.api.book.BookClassDTO;
 import org.apache.ibatis.annotations.Mapper;
 
+
 import java.util.List;
 
+/**
+ * @author superman
+ */
 @Mapper
 public interface BookClassMapper {
     /**

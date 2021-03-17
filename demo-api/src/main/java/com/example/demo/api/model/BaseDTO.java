@@ -3,6 +3,7 @@ package com.example.demo.api.model;
 import com.example.demo.api.enums.ValidFlagEnum;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -10,11 +11,11 @@ import java.util.Date;
  * @author superman
  */
 @Data
-public class BaseDTO {
+public class BaseDTO implements Serializable {
     /**
      * 数据ID*
      **/
-    private Integer id;
+    private int id;
 
     /**
      * 临时字段1

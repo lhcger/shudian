@@ -3,17 +3,16 @@ package com.example.demo.api.book;
 import com.example.demo.api.model.BaseDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**书籍
  * @author superman
  * **/
+
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class BookDTO extends BaseDTO implements Serializable {
+public class BookDTO extends BaseDTO{
     /**
      * 书籍名称
      **/
