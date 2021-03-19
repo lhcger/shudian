@@ -1,6 +1,6 @@
 package com.example.demo.dao.mapper.book;
 
-import com.example.demo.api.book.BookClassDTO;
+import com.example.demo.api.model.book.BookClassDTO;
 import org.apache.ibatis.annotations.Mapper;
 
 

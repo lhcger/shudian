@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.demo.dao.mapper.book.BookClassMapper">
-    <resultMap id="BookClassDTO" type="com.example.demo.api.book.BookClassDTO">
+    <resultMap id="BookClassDTO" type="com.example.demo.api.model.book.BookClassDTO">
         <id column="id" property="id" />
-        <result column="name" property="name" />
         <result column="temp1" property="temp1" />
-        <result column="temp1" property="temp2" />
+        <result column="temp2" property="temp2" />
+        <result column="name" property="name" />
         <result column="create_date" property="createDate" />
         <result column="update_date" property="updateDate" />
         <result column="valid_flag" property="validFlag" />
     </resultMap>
 
     <sql id="base_column">
-        id,name,temp1,temp2,create_date,update_date,valid_flag
+        id,temp1,temp2,name,create_date,update_date,valid_flag
     </sql>
 
     <select id="findListByName" resultMap="BookClassDTO">
@@ -29,7 +29,7 @@
         and valid_flag = 'ENABLE'
     </select>
 
-    <select id="insert" resultType="int">
+    <select id="insert">
         INSERT into book_class(name,valid_flag) values(#{name},#{validFlag})
     </select>
     

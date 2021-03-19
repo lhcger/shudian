@@ -1,7 +1,7 @@
-package com.example.demo.api.service;
+package com.example.demo.api.service.book;
 
 
-import com.example.demo.api.book.BookClassDTO;
+import com.example.demo.api.model.book.BookClassDTO;
 import com.example.demo.api.constants.ResultDTO;
 
 

@@ -1,11 +1,12 @@
 package com.example.demo.web.book;
 
-import com.example.demo.api.book.BookClassDTO;
+import com.example.demo.api.model.book.BookClassDTO;
 import com.example.demo.api.constants.ResultDTO;
 import com.example.demo.api.enums.HttpCode;
-import com.example.demo.api.service.BookClassService;
+import com.example.demo.api.service.book.BookClassService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,16 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @author superman
  */
 @RestController
-@RequestMapping("/bookClass")
+@RequestMapping(value = "/bookClass")
 public class BookClassController {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    private final BookClassService bookClassService;
-
-    public BookClassController(BookClassService bookClassService) {
-        this.bookClassService = bookClassService;
-    }
+    @Autowired
+    private BookClassService bookClassService;
 
     /**
      * 根据名称查找分类信息

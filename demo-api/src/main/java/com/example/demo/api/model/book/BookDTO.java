@@ -1,8 +1,10 @@
-package com.example.demo.api.book;
+package com.example.demo.api.model.book;
 
 import com.example.demo.api.model.BaseDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -18,10 +20,22 @@ public class BookDTO extends BaseDTO{
      **/
     private String bookName;
 
+
+    /**
+     * 书籍分类名称
+     */
+    private int bookClassId;
+
+
     /**
      * 价格
      */
     private BigDecimal bookPrice;
+
+    /**
+     * 书籍数量
+     */
+    private int bookCount;
 
     /**
      * 出版社
@@ -41,6 +55,8 @@ public class BookDTO extends BaseDTO{
     /**
      * 出版日期
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date publishDate;
+
 
 }

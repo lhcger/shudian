@@ -1,4 +1,4 @@
-package com.example.demo.api.book;
+package com.example.demo.api.model.book;
 import com.example.demo.api.model.BaseDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
