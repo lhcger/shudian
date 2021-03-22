@@ -25,8 +25,6 @@ public class BookClassServiceImpl implements BookClassService {
     @Autowired
     private  BookClassMapper bookClassMapper;
 
-
-
     @Override
     public ResultDTO findListByName(String name) {
         logger.info("入参：" + name);

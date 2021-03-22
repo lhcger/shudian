@@ -29,7 +29,7 @@
         and valid_flag = 'ENABLE'
     </select>
 
-    <select id="insert">
+    <select id="insert" parameterType="Integer" resultMap="BookClassDTO">
         INSERT into book_class(name,valid_flag) values(#{name},#{validFlag})
     </select>
     
